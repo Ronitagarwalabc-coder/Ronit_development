@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Template Areas</title>
+
+    <style>
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-rows: 80px 80px;
+
+            gap: 10px;
+
+            grid-template-areas:
+                "A A B E"
+                "C D B E";
+        }
+
+        .box {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            border-radius: 6px;
+        }
+
+        .a {
+            grid-area: A;
+        }
+
+        .b {
+            grid-area: B;
+        }
+
+        .c {
+            grid-area: C;
+        }
+
+        .d {
+            grid-area: D;
+        }
+
+        .e {
+            grid-area: E;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+
+    </div>
+
+</body>
+</html>

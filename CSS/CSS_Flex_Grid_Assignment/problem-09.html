@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Area Problem 5</title>
+
+    <style>
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 130px 130px 130px;
+
+            gap: 25px;
+
+            grid-template-areas:
+                "A B B C"
+                "D D E F"
+                "G H I I";
+        }
+
+        .box {
+            background-color: #247d6d;
+            border-radius: 5px;
+        }
+
+        .a {
+            grid-area: A;
+        }
+
+        .b {
+            grid-area: B;
+        }
+
+        .c {
+            grid-area: C;
+        }
+
+        .d {
+            grid-area: D;
+        }
+
+        .e {
+            grid-area: E;
+        }
+
+        .f {
+            grid-area: F;
+        }
+
+        .g {
+            grid-area: G;
+        }
+
+        .h {
+            grid-area: H;
+        }
+
+        .i {
+            grid-area: I;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+
+        <div class="box d"></div>
+        <div class="box e"></div>
+        <div class="box f"></div>
+
+        <div class="box g"></div>
+        <div class="box h"></div>
+        <div class="box i"></div>
+
+    </div>
+
+</body>
+</html>
